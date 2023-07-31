@@ -1,0 +1,114 @@
+/* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lumanosimo&family=Montserrat:wght@800&family=Mulish:wght@500&family=Noto+Sans:wght@500&family=Pacifico&family=Roboto+Condensed&family=Roboto:wght@500&display=swap');
+nav {
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+    background: linear-gradient(to right, #f12711, #f5af19);
+    color: #fff;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Lumanosimo', cursive;
+    margin-left: 3rem;
+}
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 38px, rgba(0, 0, 0, 0.22) 0px 12px 12px;
+}
+.menu-icon {
+    display: none;
+    font-size: 1.2rem;
+    /* Hide the menu icon by default */
+    cursor: pointer;
+}
+.navigation {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    /* margin-left: 7rem; */
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.16rem;
+}
+
+.menu li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    /* border-radius: 1.6rem; */
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #fff;
+    color: #f12711;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* top: 4rem; */
+    /* Adjust the top position as needed */
+    right: 1rem;
+    /* Adjust the right position as needed */
+    background-color: #333;
+    /* padding: 1rem; */
+    /* gap: 1rem; */
+    z-index: 1;
+}
+
+.active li {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #fff;
+}
+.card{
+    margin: auto !important;
+}
+
+@media screen and (max-width: 991px) {
+    .menu-icon {
+        display: block;
+        /* Show the menu icon on mobiles and tablets */
+    }
+
+    .menu {
+        display: none;
+        /* Hide the menu items on mobiles and tablets */
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        /* Adjust the top position as needed */
+        right: 1rem;
+        /* Adjust the right position as needed */
+        /* background-color: #333; */
+        /* padding: 1rem; */
+        /* gap: 1rem; */
+        z-index: 1;
+    }
+
+    .active li {
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #fff;
+    }
+}
