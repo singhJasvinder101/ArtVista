@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://singhjasvinder101.github.io/ArtVista/",
+  "homepage": "https://singhJasvinder101.github.io/ArtVista/",
   "scripts": {
     "dev": "vite",
     "build": "vite build --outDir dist",
