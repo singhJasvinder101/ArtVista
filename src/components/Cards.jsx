@@ -10,9 +10,10 @@ const Cards = ({ imageData }) => {
                     <h5 className="card-title">{imageData.title.slice(0, 45)}...</h5>
                     <h6>{imageData.department}</h6>
                     {imageData.constituents ? (
-                        imageData.constituents.map(artist => (
-                            <h6>Artist: {artist.name}</h6>
-                        ))
+                        // imageData.constituents.map(artist => (
+                        //     <h6>Artist: {artist.name}</h6>
+                        // ))
+                        <h6>Artist: {imageData.constituents[0].name}</h6>
                     ) : (
                         <h6>{imageData.repository}</h6>
                     )}

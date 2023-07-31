@@ -18,7 +18,7 @@ nav {
 }
 .menu-icon {
     display: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     /* Hide the menu icon by default */
     cursor: pointer;
 }
@@ -80,6 +80,8 @@ nav {
 }
 .card{
     margin: auto !important;
+    height: 25rem !important;
+    margin-top: 3rem !important;
 }
 
 @media screen and (max-width: 991px) {

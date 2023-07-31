@@ -11,7 +11,7 @@ const Home = () => {
     let location = useLocation();
     
     useEffect(() => {
-        searchQuery = decodeURIComponent(location.pathname.slice(1, location.length))
+        searchQuery = decodeURIComponent(location.pathname.slice(1))
         console.log(searchQuery)
     }, [location])
     
